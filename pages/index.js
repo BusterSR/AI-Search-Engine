@@ -35,11 +35,11 @@ export default function Home() {
     <div>
       <Head>
         <title>Game Idea Generator</title>
-        <link rel="icon" href="/dog.png" />
+        <link rel="icon" href="/controller.svg" />
       </Head>
 
       <main className={styles.main}>
-        <img src="/dog.png" className={styles.icon} />
+        <img src="/controller.svg" className={styles.icon} />
         <h3>Enter keywords for things you want in your generated ideas</h3>
         <form onSubmit={onSubmit}>
           <input
