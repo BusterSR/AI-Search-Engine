@@ -19,7 +19,7 @@ export default async function (req, res) {
   if (animal.trim().length === 0) {
     res.status(400).json({
       error: {
-        message: "Please enter a valid animal",
+        message: "Please enter a valid genre",
       }
     });
     return;
@@ -51,12 +51,12 @@ export default async function (req, res) {
 function generatePrompt(animal) {
   const capitalizedAnimal =
     animal[0].toUpperCase() + animal.slice(1).toLowerCase();
-  return `Suggest three names for an animal that is a superhero.
+  return `Suggest three video game ideas.
 
-Animal: Cat
-Names: Captain Sharpclaw, Agent Fluffball, The Incredible Feline
-Animal: Dog
-Names: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot
+Animal: Platformer
+Names: A Super Mario Style Platformer, A Puzzle Metroidvania Style Platformer, A Horror Space Style Platformer
+Animal: Puzzle
+Names: A Neon Block Style Puzzle Game, A Hand Drawen Tetris Style Puzzle Game, A Escape Room Style Puzzle Game
 Animal: ${capitalizedAnimal}
 Names:`;
 }
