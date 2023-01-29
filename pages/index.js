@@ -34,13 +34,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>OpenAI Quickstart</title>
+        <title>Game Idea Generator</title>
         <link rel="icon" href="/dog.png" />
       </Head>
 
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
-        <h3>Name my pet</h3>
+        <h3>What type of game do you want</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
