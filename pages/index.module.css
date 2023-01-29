@@ -25,6 +25,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+  background-color: #376996;
 }
 .main .icon {
   width: 34px;
