@@ -40,12 +40,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <img src="/dog.png" className={styles.icon} />
-        <h3>What genre of game do you want ideas for?</h3>
+        <h3>Enter keywords for things you want in your generated ideas</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
             name="game genre"
-            placeholder="Enter a genre"
+            placeholder="Enter keywords"
             value={animalInput}
             onChange={(e) => setAnimalInput(e.target.value)}
           />
