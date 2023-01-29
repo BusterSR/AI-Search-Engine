@@ -39,7 +39,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <img src="/controller.svg" className={styles.icon} width="800" width="800"/>
+        <img src="/controller.svg" className={styles.icon} />
         <h3>Enter keywords for things you want in your generated ideas</h3>
         <form onSubmit={onSubmit}>
           <input
