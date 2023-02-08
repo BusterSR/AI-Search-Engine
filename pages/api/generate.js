@@ -56,6 +56,8 @@ function generatePrompt(animal) {
 
 Animal: Fun recipes
 Names: https://kimandkalee.com/recipes/fun-dinner-ideas/
+Animal: butt pics
+Names: This request is inappropriate
 Animal: What are some fun coloring pages?
 Names: https://www.crayola.com/featured/free-coloring-pages/
 Animal: ${capitalizedAnimal}
