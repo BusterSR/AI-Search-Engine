@@ -35,7 +35,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Game Idea Generator</title>
-        <link rel="icon" href="/controller.svg" />
+        <link rel="icon" href="/search icon.png" />
       </Head>
 
       <main className={styles.main}>
