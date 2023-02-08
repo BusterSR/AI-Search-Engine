@@ -32,7 +32,7 @@ export default async function (req, res) {
       //this is where i may have messed up
       temperature: 0.6,
     });
-    res.status(200).json({ result: completion.data.choices[0].text.split("\n")[2] });
+    res.status(200).json({ result: completion.data.choices[0].text});
   } catch(error) {
     // Consider adjusting the error handling logic for your use case
     if (error.response) {
