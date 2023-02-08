@@ -1,2 +1,2 @@
 # AI Search Engine
-A AI Search Engine created using the Open AI quick start tutorial
+A search engine created with a modified Open AI Quick Start tutorial
