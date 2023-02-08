@@ -52,7 +52,7 @@ export default async function (req, res) {
 function generatePrompt(animal) {
   const capitalizedAnimal =
     animal[0].toUpperCase() + animal.slice(1).toLowerCase();
-  return `Give links to websites based on the prompt and make sure they are complete.
+  return `Give single links to websites based on the prompt and make sure they are complete.
 
 Animal: Fun recipes
 Names: https://kimandkalee.com/recipes/fun-dinner-ideas/ https://www.eatthis.com/fun-recipes-fight-boredom/ https://www.tasteofhome.com/collection/fun-recipes-for-summer-vacation/
