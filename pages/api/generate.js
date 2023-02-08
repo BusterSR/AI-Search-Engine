@@ -55,11 +55,11 @@ function generatePrompt(animal) {
   return `Give single links to websites based on the prompt and make sure they are complete.
 
 Animal: Fun recipes
-Names: <a href="https://kimandkalee.com/recipes/fun-dinner-ideas/">https://kimandkalee.com/recipes/fun-dinner-ideas/</a>
+Names: https://kimandkalee.com/recipes/fun-dinner-ideas/
 Animal: butt pics
 Names: This request is inappropriate
 Animal: What are some fun coloring pages?
-Names: <a href="https://www.crayola.com/featured/free-coloring-pages/">https://www.crayola.com/featured/free-coloring-pages/</a>
+Names: https://www.crayola.com/featured/free-coloring-pages/
 Animal: ${capitalizedAnimal}
 Names:`;
 }
