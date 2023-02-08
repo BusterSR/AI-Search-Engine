@@ -34,13 +34,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Game Idea Generator</title>
+        <title>Smart Search</title>
         <link rel="icon" href="/search icon.png" />
       </Head>
 
       <main className={styles.main}>
         <img src="/search icon.png" className={styles.icon} />
-        <h3>Enter keywords for things you want in your generated ideas</h3>
+        <h3>What Should I Search For?</h3>
         <form onSubmit={onSubmit}>
           <input
             type="text"
