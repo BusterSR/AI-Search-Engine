@@ -29,6 +29,7 @@ export default async function (req, res) {
     const completion = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: generatePrompt(animal),
+      //this is where i may have messed up
       temperature: 0.6,
     });
     res.status(200).json({ result: completion.data.choices[0].text });
@@ -51,12 +52,12 @@ export default async function (req, res) {
 function generatePrompt(animal) {
   const capitalizedAnimal =
     animal[0].toUpperCase() + animal.slice(1).toLowerCase();
-  return `Suggest three video game ideas.
+  return `Give links to websites based on the prompt.
 
-Animal: Platformer
-Names: A Super Mario Style Platformer, A Puzzle Metroidvania Style Platformer, A Horror Space Style Platformer
-Animal: Puzzle
-Names: A Neon Block Style Puzzle Game, A Hand Drawen Tetris Style Puzzle Game, A Escape Room Style Puzzle Game
+Animal: Fun recipes
+Names: https://kimandkalee.com/recipes/fun-dinner-ideas/ https://www.eatthis.com/fun-recipes-fight-boredom/ https://www.tasteofhome.com/collection/fun-recipes-for-summer-vacation/
+Animal: What are some fun coloring pages?
+Names: https://www.crayola.com/featured/free-coloring-pages/ https://www.supercoloring.com/ https://www.hp.com/us-en/shop/tech-takes/15-best-free-printable-coloring-pages-for-kids
 Animal: ${capitalizedAnimal}
 Names:`;
 }
