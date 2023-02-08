@@ -55,9 +55,9 @@ function generatePrompt(animal) {
   return `Give single links to websites based on the prompt and make sure they are complete.
 
 Animal: Fun recipes
-Names: https://kimandkalee.com/recipes/fun-dinner-ideas/ /* https://www.eatthis.com/fun-recipes-fight-boredom/ https://www.tasteofhome.com/collection/fun-recipes-for-summer-vacation/ */
+Names: https://kimandkalee.com/recipes/fun-dinner-ideas/
 Animal: What are some fun coloring pages?
-Names: https://www.crayola.com/featured/free-coloring-pages/ /* https://www.supercoloring.com/ https://www.hp.com/us-en/shop/tech-takes/15-best-free-printable-coloring-pages-for-kids */
+Names: https://www.crayola.com/featured/free-coloring-pages/
 Animal: ${capitalizedAnimal}
 Names:`;
 }
