@@ -51,7 +51,9 @@ export default function Home() {
           />
           <input type="submit" value="Search" />
         </form>
-        <div className={styles.result}>{result}</div>
+        <div className={styles.result}>
+          <a href={result} target="_blank">{result}</a>
+        </div>
       </main>
     </div>
   );
